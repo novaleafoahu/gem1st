@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova-Leaf | Specialized Soil & Gardening</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Quicksand', sans-serif; background-color: #fdfaf1; }
+        .handwritten { font-family: 'Indie Flower', cursive; }
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+        .soil-card {
+            background: #fffdf5;
+            border: 2px solid #e2d1b3;
+            transition: transform 0.3s ease;
+        }
+        .soil-card:hover { transform: translateY(-10px); }
+        .stat-bar { height: 8px; border-radius: 4px; background: #e5e7eb; overflow: hidden; }
+        .stat-fill { height: 100%; background: #84cc16; }
+    </style>
+</head>
+<body class="text-stone-800">
+
+    <nav class="flex items-center justify-between px-8 py-6 bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="flex items-center gap-2">
+            <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">NL</div>
+            <span class="text-2xl font-bold text-green-800 tracking-tight">Nova-Leaf</span>
+        </div>
+        <div class="hidden md:flex gap-8 font-semibold text-stone-600">
+            <a href="#" class="hover:text-green-600 transition">Home</a>
+            <a href="#" class="hover:text-green-600 transition">Shop</a>
+            <a href="#" class="hover:text-green-600 transition">Blog</a>
+            <a href="#" class="hover:text-green-600 transition">About Us</a>
+        </div>
+        <button class="bg-amber-500 hover:bg-amber-600 text-white px-6 py-2 rounded-full font-bold shadow-lg transition">
+            Soil Finder Quiz
+        </button>
+    </nav>
+
+    <header class="hero-gradient h-[70vh] flex flex-col items-center justify-center text-center text-white px-4">
+        <h1 class="text-5xl md:text-7xl font-bold mb-4 drop-shadow-lg">Unlock Your Garden’s Potential</h1>
+        <p class="text-xl md:text-2xl handwritten mb-8 drop-shadow-md">Specialized Blends for Every Green Dream</p>
+        <button class="bg-white text-green-800 px-10 py-4 rounded-full text-lg font-bold hover:scale-105 transition shadow-2xl">
+            Explore Soils
+        </button>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-8 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-green-900 mb-2">Specialized Soil Mixes</h2>
+            <div class="h-1 w-24 bg-amber-400 mx-auto rounded-full"></div>
+            <p class="mt-4 text-stone-500 handwritten text-xl">Crafted by the Alchemist for your botanical familiars</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="soil-card p-6 rounded-2xl shadow-xl border-b-8 border-amber-200">
+                <div class="aspect-square bg-stone-100 rounded-xl mb-6 flex items-center justify-center text-6xl">🏺</div>
+                <h3 class="text-2xl font-bold text-stone-800 mb-2">Volcanic Loam Potion</h3>
+                <p class="text-sm text-stone-500 mb-6">Perfect for rare Aroids and tropical travelers.</p>
+                
+                <div class="space-y-3">
+                    <div>
+                        <div class="flex justify-between text-xs font-bold mb-1"><span>AERATION</span><span>85%</span></div>
+                        <div class="stat-bar"><div class="stat-fill" style="width: 85%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs font-bold mb-1"><span>MOISTURE</span><span>40%</span></div>
+                        <div class="stat-bar"><div class="stat-fill" style="width: 40%; background: #3b82f6;"></div></div>
+                    </div>
+                </div>
+                <button class="w-full mt-8 border-2 border-green-600 text-green-600 py-2 rounded-lg font-bold hover:bg-green-600 hover:text-white transition">Add to Satchel</button>
+            </div>
+
+            <div class="soil-card p-6 rounded-2xl shadow-xl border-b-8 border-green-600 scale-105 bg-white relative">
+                <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-green-600 text-white px-4 py-1 rounded-full text-xs font-bold">POPULAR</span>
+                <div class="aspect-square bg-green-50 rounded-xl mb-6 flex items-center justify-center text-6xl">🌿</div>
+                <h3 class="text-2xl font-bold text-stone-800 mb-2">Herbalist's Humus</h3>
+                <p class="text-sm text-stone-500 mb-6">A rich, ancient blend for kitchen gardens.</p>
+                <div class="space-y-3">
+                    <div>
+                        <div class="flex justify-between text-xs font-bold mb-1"><span>AERATION</span><span>60%</span></div>
+                        <div class="stat-bar"><div class="stat-fill" style="width: 60%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs font-bold mb-1"><span>MOISTURE</span><span>90%</span></div>
+                        <div class="stat-bar"><div class="stat-fill" style="width: 90%; background: #3b82f6;"></div></div>
+                    </div>
+                </div>
+                <button class="w-full mt-8 bg-green-600 text-white py-2 rounded-lg font-bold hover:bg-green-700 shadow-lg transition">Add to Satchel</button>
+            </div>
+
+            <div class="soil-card p-6 rounded-2xl shadow-xl border-b-8 border-amber-200">
+                <div class="aspect-square bg-stone-100 rounded-xl mb-6 flex items-center justify-center text-6xl">🌵</div>
+                <h3 class="text-2xl font-bold text-stone-800 mb-2">Desert Sand Scroll</h3>
+                <p class="text-sm text-stone-500 mb-6">For succulents that fear the flood.</p>
+                <div class="space-y-3">
+                    <div>
+                        <div class="flex justify-between text-xs font-bold mb-1"><span>DRAINAGE</span><span>95%</span></div>
+                        <div class="stat-bar"><div class="stat-fill" style="width: 95%; background: #f59e0b;"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs font-bold mb-1"><span>NUTRIENTS</span><span>30%</span></div>
+                        <div class="stat-bar"><div class="stat-fill" style="width: 30%"></div></div>
+                    </div>
+                </div>
+                <button class="w-full mt-8 border-2 border-green-600 text-green-600 py-2 rounded-lg font-bold hover:bg-green-600 hover:text-white transition">Add to Satchel</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-400 py-12 px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+            <div>
+                <h4 class="text-white text-xl font-bold mb-2 tracking-widest uppercase">Nova-Leaf</h4>
+                <p class="handwritten text-lg">Growing magic from the ground up.</p>
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition">Instagram</a>
+                <a href="#" class="hover:text-white transition">Pinterest</a>
+                <a href="#" class="hover:text-white transition">Community</a>
+            </div>
+            <p class="text-xs">&copy; 2026 Nova-Leaf Garden Co. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
