@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volcanic Loam Potion | Nova-Leaf</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Quicksand', sans-serif; background-color: #fdfaf1; }
+        .handwritten { font-family: 'Indie Flower', cursive; }
+        .scroll-bg { background: #f4ecd8; border: 2px solid #d4c3a3; border-radius: 15px; position: relative; }
+        .scroll-bg::before, .scroll-bg::after { content: ''; position: absolute; height: 100%; width: 20px; background: #e2d1b3; top: 0; border-radius: 10px; }
+        .scroll-bg::before { left: -10px; } .scroll-bg::after { right: -10px; }
+    </style>
+</head>
+<body class="text-stone-800">
+    <nav class="p-6"><a href="index.html" class="text-green-700 font-bold">← Back to Conservatory</a></nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="bg-white p-8 rounded-3xl shadow-2xl border-4 border-emerald-100 flex justify-center">
+                <span class="text-[12rem] drop-shadow-xl">🏺</span>
+            </div>
+
+            <div>
+                <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-bold">Rarity: Ancient</span>
+                <h1 class="text-5xl font-bold text-green-900 mt-4 mb-2">Volcanic Loam Potion</h1>
+                <p class="handwritten text-2xl text-stone-600 mb-6">"A breath of fire for the roots of the jungle."</p>
+                <p class="text-stone-500 leading-relaxed mb-8">Forged from crushed basalt and aged forest floor, this mix mimics the high-drainage, nutrient-dense slopes of volcanic islands. Perfect for Monstera, Alocasia, and plants that demand "wet feet, dry ankles."</p>
+                <button class="bg-green-600 text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-green-700 transition w-full md:w-auto">Add to Satchel — $24.00</button>
+            </div>
+        </div>
+
+        <div class="mt-20 grid md:grid-cols-2 gap-8">
+            <div class="scroll-bg p-8 shadow-inner">
+                <h2 class="handwritten text-3xl font-bold mb-4 border-b-2 border-stone-300 pb-2">The Recipe (Ingredients)</h2>
+                <ul class="space-y-4 text-lg">
+                    <li class="flex items-center gap-3">✨ <span class="font-semibold">Crushed Scoria:</span> Provides jagged air pockets for root breathing.</li>
+                    <li class="flex items-center gap-3">🌿 <span class="font-semibold">Fermented Pine Bark:</span> Holds the spirit of the old woods.</li>
+                    <li class="flex items-center gap-3">🌑 <span class="font-semibold">Activated Biochar:</span> A filter for impurities and toxins.</li>
+                    <li class="flex items-center gap-3">🦴 <span class="font-semibold">Organic Bone Meal:</span> Long-lasting strength for stems.</li>
+                </ul>
+            </div>
+
+            <div class="p-8 border-2 border-dashed border-stone-300 rounded-3xl">
+                <h2 class="text-2xl font-bold text-green-900 mb-4 uppercase tracking-widest">Alchemist's Guide</h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="bg-emerald-600 text-white w-8 h-8 rounded-full flex items-center justify-center shrink-0">1</div>
+                        <p>Gently shake the bag to awaken the elements. Ensure the mix is slightly damp before potting.</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="bg-emerald-600 text-white w-8 h-8 rounded-full flex items-center justify-center shrink-0">2</div>
+                        <p>Place your plant in a terra-cotta or ceramic vessel. Fill gaps loosely—do not pack the soil down!</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="bg-emerald-600 text-white w-8 h-8 rounded-full flex items-center justify-center shrink-0">3</div>
+                        <p>Water until a "tea" flows from the bottom. Repeat only when the top two inches feel like a dry summer path.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
